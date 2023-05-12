@@ -1,10 +1,13 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 import ComponentDetail from './src/components/ComponentDetail';
 import ComponentStart from './src/components/ComponentStart';
 import ComponentHome from './src/components/ComponentHome';
 import styles from './src/themes/styles';
+
+
+const Stack = createNativeStackNavigator();
 
 export default function App() {
   return (
@@ -13,7 +16,16 @@ export default function App() {
     //   <StatusBar style="auto" />
     // </View>
 
-    <ComponentStart style= {styles.flex_1} />
+    // <ComponentStart style= {styles.flex_1} />
+
+
+    <NavigationContainer>
+      <Stack.Navigator initialRouteName="ComponentStart" screenOptions={{headerShown: false}}>
+        <Stack.Screen name="ComponentStart" component={ComponentStart} />
+        <Stack.Screen name="ComponentHome" component={ComponentHome} />
+        <Stack.Screen name="ComponentDetail" component={ComponentDetail} />
+      </Stack.Navigator>
+    </NavigationContainer>
   );
 }
 
