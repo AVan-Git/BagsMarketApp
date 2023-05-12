@@ -4,7 +4,7 @@ import React from 'react'
 import styles from '../themes/styles'
 
 const ComponentStart = ({ navigation }) => {
-  console.log("🚀 ~ file: ComponentStart.js:7 ~ ComponentStart ~ navigation:", navigation)
+  // console.log("🚀 ~ file: ComponentStart.js:7 ~ ComponentStart ~ navigation:", navigation)
   return (
     <View style={[styles.flex_1, {
       backgroundColor: '#f0f0f0',

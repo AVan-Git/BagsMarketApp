@@ -16,6 +16,9 @@ export default StyleSheet.create({
     flex_5:{
         flex:5
     },
+    flex_6:{
+        flex:6
+    },
     centerView:{
         alignItems:"center",
         justifyContent:'center'
