@@ -33,4 +33,18 @@ export default StyleSheet.create({
         flexDirection:'column'
     },
     
+    // scr2:
+    navbar:{
+        textTransform:'uppercase',
+        padding: 8,
+        marginVertical: 10,
+        marginRight: 10,
+        backgroundColor: '#f4f4f4',
+        borderRadius: 10,
+        fontWeight: '600'
+    },
+    navbar_show:{
+        backgroundColor: '#000',
+        color: '#fff'
+    }
 })
